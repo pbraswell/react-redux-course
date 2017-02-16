@@ -4,9 +4,7 @@
   "description": "React-Redux course for Treehouse",
   "main": "src/index.js",
   "scripts": {
-    "prestart": "npm run lint",
-    "start": "webpack-dev-server --progress --inline --hot",
-    "lint": "eslint ./src/**/*.{js, jsx} --fix",
+    "start": "webpack-dev-server --progress --host $IP --port $PORT  --hot --inline",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -17,8 +15,11 @@
   "author": "Beau Palmquist",
   "license": "MIT",
   "dependencies": {
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "lint": "^1.1.2",
+    "react": "^15.4.2",
+    "react-dom": "^15.3.2",
+    "react-redux": "^5.0.2",
+    "redux": "^3.6.0"
   },
   "devDependencies": {
     "babel-core": "^6.13.2",
